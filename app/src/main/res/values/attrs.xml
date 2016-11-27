@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MagicButton">
+        <attr name="mgb_borderWidth" format="dimension|reference"/>
+        <attr name="mgb_borderRadius" format="dimension|reference"/>
+        <attr name="mgb_borderColor" format="color|reference"/>
+        <attr name="mgb_rippleColor" format="color|reference"/>
+        <attr name="mgb_rippleDuration" format="integer|reference"/>
+        <attr name="mgb_bgColor" format="color|reference"/>
+
+    </declare-styleable>
+</resources>

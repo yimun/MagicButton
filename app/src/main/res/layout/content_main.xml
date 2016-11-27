@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.yimu.magicbutton.MainActivity"
+    android:background="@android:color/white"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <me.yimu.magicbutton.FrodoVoteButton
+        android:id="@+id/vote_button"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="24dp" />
+
+    <me.yimu.magicbutton.FrodoVoteTextView
+        android:id="@+id/vote_textview"
+        android:layout_below="@+id/vote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <me.yimu.magicbutton.FrodoLikeTextView
+        android:id="@+id/like_textview"
+        android:layout_below="@id/vote_textview"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <me.yimu.magicbutton.RippleButton
+        android:layout_below="@id/like_textview"
+        android:layout_marginTop="20dp"
+        android:layout_width="60dp"
+        android:text="ahahh"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        app:mgb_borderRadius="10dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>
